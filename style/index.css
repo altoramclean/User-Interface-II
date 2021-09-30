@@ -1,1 +1,153 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+*{
+	box-sizing:border-box;
+	padding:0;
+	margin:0;
+	max-width:100%;
+	border:1px solid grey
+}
 /* Add CSS styling here */
+html{
+	font-size:62.5%;
+}
+body{
+	font-size:2.0rem;;
+	background-color: aliceblue;
+	line-height:1.5;
+	color:black;
+}
+a{
+	font-size:80%;
+	color:black;
+}
+h1{font-size:4.5rem;
+	color:gold;	
+	margin-bottom:10%;
+}
+section{
+	padding:6% 0;
+}
+button{
+	padding:3% 5%;
+	margin-top:13%;
+	color:white;
+	background-color:thistle;
+	border:2px solid rgb(177, 137, 177);
+	font-size:4.5rem;
+}
+button:hover{
+	color:paleturquoise;
+	background-color:thistle;
+}
+nav{
+	display:flex;
+	justify-content:space-evenly;
+	align-items:center;
+	width:100%;
+	top:0;
+	z-index:999;
+	background-color:blanchedalmond;
+}
+.projectlayouts{
+	display:flex;
+	justify-content:space-evenly;
+	flex-wrap:wrap;
+	flex-direction:row;
+}
+.links{
+	width:30%;
+	display:flex;
+	justify-content:space-between;
+}
+#Altora{
+	height:80vh;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	background-image:url(../images/view.jpg);
+	background-size:cover;
+	background-position:bottom;
+	background-repeat:no-repeat;
+
+}
+#Altora button{
+	color:rgb(22, 20, 20);
+	background-color:thistle;
+}
+#Altora button:hover{
+	color:paleturquoise;
+	background-color:thistle;
+
+}
+/*for this section i tried wrapping it however it still appeared side by side instead of wrapped on top of one another*/
+.project1{
+	width:13%;
+	display:flex;
+	flex-wrap: wrap;
+	text-align:center;
+}
+.project2{
+	width:18%;
+	display:flex;
+	flex-wrap: wrap;
+	text-align:center;
+}
+.project3{
+	width:14%;
+	display:flex;
+	flex-wrap:wrap;
+	text-align:center;
+}
+.project4{
+	width:15%;
+	display:flex;
+	flex-wrap: wrap;
+	text-align:center;
+}
+.project5{
+	width:19%;
+	display:flex;
+	flex-wrap: wrap;
+	text-align:center;
+}
+.project6{
+	width: 19%;
+	display:flex;
+	flex-wrap: wrap;
+	text-align:center;
+}
+footer{
+	display:flex;
+	flex-wrap:wrap;
+}
+#Contact{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	text-align:center;
+	width:100%;
+}
