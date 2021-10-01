@@ -35,80 +35,72 @@ html{
 	font-size:62.5%;
 }
 body{
-	font-size:2.0rem;;
+	font-size:2.0rem;
 	background-color: aliceblue;
 	line-height:1.5;
 	color:black;
 }
 a{
-	font-size:80%;
+	font-size:40%;
 	color:black;
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
 }
-h1{font-size:4.5rem;
+h2{font-size:4.5rem;
 	color:gold;	
 	margin-bottom:10%;
 }
 section{
 	padding:6% 0;
 }
-button{
-	padding:3% 5%;
-	margin-top:13%;
-	color:white;
-	background-color:thistle;
-	border:2px solid rgb(177, 137, 177);
-	font-size:4.5rem;
-}
-button:hover{
-	color:paleturquoise;
-	background-color:thistle;
-}
+
 nav{
 	display:flex;
-	justify-content:space-evenly;
-	align-items:center;
-	width:100%;
-	top:0;
-	z-index:999;
+	flex-direction:row;
+	justify-content:space-between;
 	background-color:blanchedalmond;
+	font-size:larger;
+}
+.links button{
+	font-size:30px;
+}
+
+.Altora{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	background-repeat:no-repeat;
+}
+.Altora button{
+	color:black;
+	background-color:thistle;
+	background-image:url(../images/view.jpg);
+	background-size:cover;
+	font-size:80px;
+	width:600px;
+	height:400px;
+}
+.Altora button:hover{
+	color:paleturquoise;
+	background-color:thistle;
+
 }
 .projectlayouts{
 	display:flex;
 	justify-content:space-evenly;
 	flex-wrap:wrap;
 	flex-direction:row;
+	padding:20px;
 }
-.links{
-	width:30%;
-	display:flex;
-	justify-content:space-between;
-}
-#Altora{
-	height:80vh;
-	display:flex;
-	justify-content:center;
-	align-items:center;
-	background-image:url(../images/view.jpg);
-	background-size:cover;
-	background-position:bottom;
-	background-repeat:no-repeat;
 
-}
-#Altora button{
-	color:rgb(22, 20, 20);
-	background-color:thistle;
-}
-#Altora button:hover{
-	color:paleturquoise;
-	background-color:thistle;
-
-}
-/*for this section i tried wrapping it however it still appeared side by side instead of wrapped on top of one another*/
 .project1{
 	width:13%;
 	display:flex;
 	flex-wrap: wrap;
 	text-align:center;
+	flex-direction:row;
+
 }
 .project2{
 	width:18%;
@@ -141,8 +133,21 @@ nav{
 	text-align:center;
 }
 footer{
-	display:flex;
-	flex-wrap:wrap;
+	background-color:lightgray;
+	padding:20px;
+	text-align:center;
+}
+footer button{
+	padding:3% 5%;
+	margin-top:13%;
+	color:white;
+	background-color:thistle;
+	border:2px solid rgb(177, 137, 177);
+	font-size:4.5rem;
+}
+footer button:hover{
+	color:paleturquoise;
+	background-color:thistle;
 }
 #Contact{
 	display:flex;
