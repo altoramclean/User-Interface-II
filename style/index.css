@@ -1,1 +1,327 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  border: 1px solid grey;
+}
 /* Add CSS styling here */
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 2rem;
+  background-color: aliceblue;
+  line-height: 1.5;
+  color: black;
+}
+a {
+  font-size: 40%;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+h2 {
+  font-size: 4.5rem;
+  color: gold;
+  margin-bottom: 10%;
+}
+section {
+  padding: 6% 0;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: blanchedalmond;
+  font-size: 16px;
+}
+.links button {
+  font-size: 30px;
+}
+
+.Altora {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/view.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  text-align: center;
+}
+.Altora button {
+  color: black;
+  background-color: thistle;
+  font-size: 80px;
+  padding: 5px 10px;
+  text-align: center;
+  margin-left: 12%;
+}
+button:hover {
+  color: paleturquoise;
+  background-color: thistle;
+}
+.projectlayouts {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 7%;
+}
+
+.projectlayouts div {
+  width: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  flex-direction: row;
+}
+
+footer {
+  background-color: lightgray;
+  padding: 20px;
+  text-align: center;
+}
+footer button {
+  padding: 3% 5%;
+  margin-top: 13%;
+  color: white;
+  background-color: thistle;
+  border: 2px solid rgb(177, 137, 177);
+  font-size: 4.5rem;
+}
+footer button:hover {
+  color: paleturquoise;
+  background-color: thistle;
+}
+#Contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+/*Media Queries*/
+@media (max-width: 500px) {
+  h1 {
+    font-size: 5rem;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	text-decoration:none;
+	width:100%;
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 5rem;
+  }
+  .links button {
+    width:100%;
+    margin:1% 0;
+  }
+  /*top*/
+  .Altora {
+    background-image: url("../images/view.jpg");
+	width:100%;
+	margin:0 auto;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    height: 50vh;
+  }
+  /*bottom*/
+
+  .projectlayouts {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .projectlayouts div{
+	  width:46%;
+  }
+  
+}
+
+
+@media (max-width: 800px) {
+	h1{
+		font-size:5rem;
+	  }
+	  nav {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		font-size:5rem;
+	  }
+	 nav a{
+		 padding:5%;
+		 font-size:2.0rem;
+		 text-decoration: none;
+	 }
+	  .links{
+		display:flex;
+		flex-direction:column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		font-size:5rem;
+	  }
+	  .links button {
+		width:100%;
+		margin:1% 0;
+	  }
+	  /*top*/
+	  .Altora {
+		background-image: url("../images/view.jpg");
+		width:100%;
+		font-size: 1.5rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		text-align: center;
+		height: 50vh;
+	  }
+/*bottom part*/
+.projectlayouts {
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+  }
+
+  .projectlayouts div{
+	  width:46%;
+
+  }
+
+}
+
+ 
+  
