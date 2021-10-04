@@ -1,158 +1,340 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
-*{
-	box-sizing:border-box;
-	padding:0;
-	margin:0;
-	max-width:100%;
-	border:1px solid grey
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  border: 1px solid grey;
 }
 /* Add CSS styling here */
-html{
-	font-size:62.5%;
+html {
+  font-size: 62.5%;
 }
-body{
+body {
+  font-size: 2rem;
+  background-color: aliceblue;
+  line-height: 1.5;
+  color: black;
+}
+a {
+  font-size: 40%;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+h2 {
+  font-size: 4.5rem;
+  color: gold;
+  margin-bottom: 10%;
+}
+section {
+  padding: 6% 0;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: blanchedalmond;
+  font-size: 16px;
+}
+.links button {
+  font-size: 30px;
+}
+
+.Altora {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+}
+.Altora button {
+  color: black;
+  background-color: thistle;
+  background-image: url(../images/view.jpg);
+  background-size: cover;
+  font-size: 80px;
+  width: 100vw;
+  height: 70vh;
+}
+.Altora button:hover {
+  color: paleturquoise;
+  background-color: thistle;
+}
+.projectlayouts {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 7%;
+}
+
+.project1 {
+  width: 13%;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  flex-direction: row;
+}
+.project2 {
+  width: 18%;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.project3 {
+  width: 14%;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.project4 {
+  width: 15%;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.project5 {
+  width: 19%;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.project6 {
+  width: 19%;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+footer {
+  background-color: lightgray;
+  padding: 20px;
+  text-align: center;
+}
+footer button {
+  padding: 3% 5%;
+  margin-top: 13%;
+  color: white;
+  background-color: thistle;
+  border: 2px solid rgb(177, 137, 177);
+  font-size: 4.5rem;
+}
+footer button:hover {
+  color: paleturquoise;
+  background-color: thistle;
+}
+#Contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+/*Media Queries*/
+@media (max-width: 500px) {
+  h1{
+    font-size:5rem;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  nav a{
+	padding:5%;
 	font-size:2.0rem;
-	background-color: aliceblue;
-	line-height:1.5;
-	color:black;
-}
-a{
-	font-size:40%;
-	color:black;
-	display:flex;
+	text-decoration: none;
+  }
+  .links {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+	font-size:5rem;
+  }
+  /*top*/
+  .Altora {
+    margin-top: 13%;
+    font-size:1.5rem;
+    padding: 4% 2%;
+  }
+  /*bottom*/
+
+  .projectlayouts {
+    display: flex;
 	flex-direction:row;
-	justify-content:center;
-}
-h2{font-size:4.5rem;
-	color:gold;	
-	margin-bottom:10%;
-}
-section{
-	padding:6% 0;
-}
-
-nav{
-	display:flex;
-	flex-direction:row;
-	justify-content:space-between;
-	background-color:blanchedalmond;
-	font-size:larger;
-}
-.links button{
-	font-size:30px;
-}
-
-.Altora{
-	display:flex;
-	justify-content:center;
-	align-items:center;
-	background-repeat:no-repeat;
-}
-.Altora button{
-	color:black;
-	background-color:thistle;
-	background-image:url(../images/view.jpg);
-	background-size:cover;
-	font-size:80px;
-	width:600px;
-	height:400px;
-}
-.Altora button:hover{
-	color:paleturquoise;
-	background-color:thistle;
-
-}
-.projectlayouts{
-	display:flex;
-	justify-content:space-evenly;
-	flex-wrap:wrap;
-	flex-direction:row;
-	padding:20px;
-}
-
-.project1{
-	width:13%;
-	display:flex;
 	flex-wrap: wrap;
-	text-align:center;
-	flex-direction:row;
+    justify-content: center;
+    align-items: center;
+  }
 
+
+
+
+
+
+
+
+
+
+
+
+}
+
+@media (max-width: 800px) {
+	h1{
+		font-size:5rem;
+	  }
+	  nav {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		font-size:5rem;
+	  }
+	 nav a{
+		 padding:5%;
+		 font-size:2.0rem;
+		 text-decoration: none;
+	 }
+	  .links{
+		display:flex;
+		flex-direction:column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		font-size:5rem;
+	  }
+	  /*top*/
+	  .Altora {
+		margin-top: 13%;
+		font-size: 1.5rem;
+		padding: 4% 2%;
+	  }
+/*bottom part*/
+	  .projectlayouts{
+		  display:flex;
+		  flex-wrap: wrap;
+		  flex-direction: row;
+		  align-items: center;
+		  justify-content: center;
+
+	  }
+	  
+.project1{
+	padding:0 2px;
 }
 .project2{
-	width:18%;
-	display:flex;
-	flex-wrap: wrap;
-	text-align:center;
+	padding:0 2px;
 }
 .project3{
-	width:14%;
-	display:flex;
-	flex-wrap:wrap;
-	text-align:center;
+	padding:0 5px;
+
 }
-.project4{
-	width:15%;
-	display:flex;
-	flex-wrap: wrap;
-	text-align:center;
-}
-.project5{
-	width:19%;
-	display:flex;
-	flex-wrap: wrap;
-	text-align:center;
-}
-.project6{
-	width: 19%;
-	display:flex;
-	flex-wrap: wrap;
-	text-align:center;
-}
-footer{
-	background-color:lightgray;
-	padding:20px;
-	text-align:center;
-}
-footer button{
-	padding:3% 5%;
-	margin-top:13%;
-	color:white;
-	background-color:thistle;
-	border:2px solid rgb(177, 137, 177);
-	font-size:4.5rem;
-}
-footer button:hover{
-	color:paleturquoise;
-	background-color:thistle;
-}
-#Contact{
-	display:flex;
-	justify-content:center;
-	align-items:center;
-	text-align:center;
-	width:100%;
-}
+
+	}
